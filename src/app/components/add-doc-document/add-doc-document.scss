@@ -1,0 +1,198 @@
+.spacing-div{
+    width: 95%;
+    margin: 0 auto;
+}
+.doc-txt{
+    color: black;
+    font-family: 'm-regular';
+    font-size: 22px;
+   
+
+}
+.background-colr{
+    background-color: #f5f5f5;
+    min-height: 100vh;
+
+}
+.left-side{
+    position: relative;
+    float: left;
+}
+.head-wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.back-arw-img{
+    width: 20px;
+    margin-top: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.doc-shre-txt{
+    font-family: 'm-regular';
+    font-size: 16px;
+    
+}
+.white-div{
+    background-color: white;
+    padding: 25px;
+}
+.upload-file-txt{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #663274;
+    font-family: 'm-s-bold';
+    letter-spacing: 3px;
+}
+.upload-file-btn{
+    background-color: #f5f5f5;
+    font-family: 'm-regular';
+    color: black;
+    border: none;
+    padding: 15px 60px;
+    font-size: 16px;
+}
+.marTop20{
+    margin-top: 20px;
+}
+.mar30{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.nn-lbl{
+    font-family: 'm-regular';
+}
+.signin-btn{
+    border-radius: 3px;
+    height: 38px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #24b06d;
+
+}
+.custom-file-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 38px;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+   
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius:3px;
+  }
+  .custom-file-control:lang(en)::before {
+    content: "Browse";
+  }
+  .custom-file-control::before {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: -15;
+    display: block;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    font-size: 0;
+  }
+  .custom-file-control:lang(en):empty::after {
+    content: "Choose file...";
+  }
+  .cross-img-rmv-btn{
+    background-color: transparent;
+  }
+  .custom-file{
+      position: relative;
+   
+  }
+  .height38{
+      height: 38px;
+      width: 100%;
+  }
+  .width22{
+      width: 22px;
+  }
+  .nofocus:focus{
+      outline: none;
+  }
+
+  .hideGP,.hideSpecialist,.hidedoctor,.hidepharmacy,.hidelab{
+      display: none;
+  }
+  .yes-btn{
+    background-color: #24b06d;
+    color: white;
+    font-family: 'm-light';
+    padding: 5px 30px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+.modal-title{
+    font-family: 'm-bold';
+    font-size: 20px;
+    color: black;
+}
+.modal-bdy-txt{
+    font-family: 'm-regular';
+    color: black;
+}
+.modal-dialog{
+    width: 450px;
+    margin: 0 auto;
+}
+.modal-footer{
+    border-top: none;
+}
+.fw-600{
+    font-weight: 600;
+}
+.error{
+    color: red;
+}
+.clr-white{
+    color: white;
+}
+.pnerror,.eaerror{
+    display: none;
+}
+
+
+#myModal3 .vertical-align-center{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+
+#myModal3 .vertical-alignment-helper .modal-dialog{
+ 
+    transform: none !important; 
+}
+
+#myModal3 .vertical-alignment-helper .modal-content{
+    width: 450px !important;
+    margin: 0 auto;
+}

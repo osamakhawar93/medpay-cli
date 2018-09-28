@@ -1,0 +1,161 @@
+<section>
+  <div class="background-colr">
+    <div class="spacing-div">
+      <div class="row">
+        <div class="col-xs-6">
+          <p class="doc-txt" translate>
+            Documents
+          </p>
+        </div>
+        <div class="col-xs-6 algnRight">
+          <button (click)="moveToDoctorDocument()" class="share-btn" type="button" translate>Add</button>
+        </div>
+      </div>
+
+
+
+      <div class="white-div">
+
+        <div class="table-responsive">
+
+          <table class="table nn-table">
+            <thead>
+              <tr>
+                <th class="date-col fontMontReg font17 padding12 width30">
+                  <div class="left-side" translate>
+                    Name
+                  </div>
+                  <div class="left-side">
+                    <img class="tbl-icon" src="../../../assets/images/icon-tbl.png">
+                  </div>
+                </th>
+                <th class="patient-name fontMontReg font17 padding12 width30" translate>Patient Name</th>
+                <th class="time-slot fontMontReg font17 padding12 width40 algnRight" translate>Add Share</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt clrblue" id="1" (click)="moveToShareDetails($event)" style="cursor:pointer;" translate>
+                    Document <span>1</span>
+                  </p>
+                  <p translate>Click to select/unselect individual recipients</p>
+                </td>
+                <td class="patient-name no-border-top">
+
+                  <p class="tbl-txt">
+                    Annett Meister
+                  </p>
+                </td>
+                <td class="time-slot no-border-top algnRight">
+                  <img class="usr-icon-img" src="../../../assets/images/actv-usr-icon.png" (click)="navigateToDocShareReq()">
+                  <p class="mt-15" translate>Share/unshare with group</p>
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt clrblue" id="2" (click)="moveToShareDetails($event)" style="cursor:pointer;" translate>
+                    Document <span>2</span>
+                  </p>
+                  <p translate>Click to select/unselect individual recipients</p>
+                </td>
+                <td class="patient-name no-border-top">
+
+                  <p class="tbl-txt">
+                    Anton Philips
+                  </p>
+                </td>
+                <td class="time-slot no-border-top algnRight">
+                  <img class="usr-icon-img" src="../../../assets/images/actv-usr-icon.png" (click)="navigateToDocShareReq()">
+                  <p class="mt-15" translate>Share/unshare with group</p>
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt clrblue" id="3" (click)="moveToShareDetails($event)" style="cursor:pointer;" translate>
+                    Document <span>3</span>
+                  </p>
+                  <p translate>Click to select/unselect individual recipients</p>
+                </td>
+                <td class="patient-name no-border-top">
+
+                  <p class="tbl-txt">
+                    Christian Brauer
+                  </p>
+                </td>
+                <td class="time-slot no-border-top algnRight">
+                  <img class="usr-icon-img" src="../../../assets/images/actv-usr-icon.png" (click)="navigateToDocShareReq()">
+                  <p class="mt-15" translate>Share/unshare with group</p>
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt clrblue" id="4" (click)="moveToShareDetails($event)" style="cursor:pointer;" translate>
+                    Document <span>4</span><br>
+                    
+
+                  </p>
+                  <p translate>Click to select/unselect individual recipients</p>
+                </td>
+                <td class="patient-name no-border-top">
+
+                  <p class="tbl-txt">
+                    Lukas Eiffel
+                  </p>
+                </td>
+                <td class="time-slot no-border-top algnRight">
+                  <img class="usr-icon-img" src="../../../assets/images/actv-usr-icon.png" (click)="navigateToDocShareReq()">
+                <p class="mt-15" translate>Share/unshare with group</p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" translate>Sharer Document</h4>
+              </div>
+              <div class="modal-body">
+                <p class="modal-bdy-txt" translate>
+                  Enter Email address
+                </p>
+                <div>
+                  <input type="password" class="form-control nn-input" id="cpass1" placeholder="john@gmx.de">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="left-side clearfix">
+                  <button type="button" class="btn yes-btn" data-dismiss="modal" translate>Share</button>
+                </div>
+                <div class="left-side clearfix">
+                  <button type="button" class="btn cancel-btn" data-dismiss="modal" translate>Cancel</button>
+                </div>
+        
+              </div>
+            </div>
+        
+          </div>
+    </div>
+
+</div>

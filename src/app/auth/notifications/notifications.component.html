@@ -1,0 +1,375 @@
+<section>
+        <div class="background-colr">
+            <div class="spacing-div">
+                <div class="head-wrap clearfix">
+                        <div class="left-side clearfix">
+                                <img class="back-arw-img" src="../../../assets/images/arrow-back-img.png" (click)="goBackPatientOrCustomer();">
+                            </div>
+                            <div class="left-side clearfix">
+                                    <p class="doc-txt" translate>
+                                        Notifications       
+                                    </p>
+                            </div>
+                </div>
+                <div class="white-div">
+                    <div class="table-responsive">
+                            <table  class="table nn-table">
+                                    <tbody >
+                                      <tr>
+                                        <td>
+                                            <div class="block-elems clearfix">
+                                                <div class="left-side clearfix">
+                                                    <p class="notify-top-txt">
+                                                            30 <span translate>June</span>
+                                                    </p>
+                                                </div>
+                                                <div class="left-side clearfix">
+                                                    <p class="notify-top-txt border-adjstmnt">
+                                                            09:00 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="notify-btm-txt" translate>
+                                                    Doctor Maria has request to share your document with Doctor Haris
+                                            </p>
+                                        </td>
+                                        
+                                         <td *ngIf="patientNotPart">
+                                                <div class="block-elems padding20  clearfix">
+                                                        <div class="left-side clearfix width35">
+                                                            <img class="tick-in-circle-img" src="../../../assets/images/tick-in-circle.png" data-toggle="modal" data-target="#myModal2">
+                                                        </div>
+                                                        <div class="left-side clearfix width65">
+                                                            <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal2" translate>
+                                                                Accept
+                                                            </p>
+                                                        </div>
+                                                </div>
+                                        </td>
+                                        <td *ngIf="patientNotPart1">
+                                                <div class="block-elems padding20  clearfix">
+                                                        <div class="left-side clearfix width35">
+                                                            <img class="tick-in-circle-img" src="../../../assets/images/cross-in-circle.png" data-toggle="modal" data-target="#myModal">
+                                                        </div>
+                                                        <div class="left-side clearfix width65">
+                                                            <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal" translate>
+                                                                Reject
+                                                            </p>
+                                                        </div>
+                                                </div>
+                                        </td> 
+                                        <td  colspan="2" *ngIf="doctorNotPart">
+                                                <div class="block-elems padding20  RytFloat clearfix width100">
+                                                        <div class="left-side clearfix width50">
+                                                            <img class="tick-in-circle-img" src="../../../assets/images/resend-icon.png" data-toggle="modal" data-target="#myModal3">
+                                                        </div>
+                                                        <div class="left-side clearfix width50">
+                                                            <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal3" translate>
+                                                                Resend
+                                                            </p>
+                                                        </div>
+                                                </div>
+                                        </td>
+                                       
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <div class="block-elems clearfix">
+                                                <div class="left-side clearfix">
+                                                    <p class="notify-top-txt">
+                                                            30 <span translate>June</span>
+                                                    </p>
+                                                </div>
+                                                <div class="left-side clearfix">
+                                                    <p class="notify-top-txt border-adjstmnt">
+                                                            12:00 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="notify-btm-txt" translate>
+                                                    Doctor Maria shared your document with Doctor Haris.
+                                            </p>
+                                        </td>
+                                        <td  colspan="2" *ngIf="patientNotPart">
+                                                
+                                        </td>
+                                     
+                                        <td  colspan="2" *ngIf="doctorNotPart">
+                                                
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                            <td>
+                                                <div class="block-elems clearfix">
+                                                    <div class="left-side clearfix">
+                                                        <p class="notify-top-txt">
+                                                                30 <span translate>June</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="left-side clearfix">
+                                                        <p class="notify-top-txt border-adjstmnt">
+                                                                12:30 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="notify-btm-txt" translate>
+                                                        Doctor Maria has request to share your document with Doctor Haris
+                                                </p>
+                                            </td>
+                                            <td *ngIf="patientNotPart">
+                                                    <div class="block-elems padding20  clearfix">
+                                                            <div class="left-side clearfix width35">
+                                                                <img class="tick-in-circle-img" src="../../../assets/images/tick-in-circle.png" data-toggle="modal" data-target="#myModal2">
+                                                            </div>
+                                                            <div class="left-side clearfix width65">
+                                                                <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal2" translate>
+                                                                    Accept
+                                                                </p>
+                                                            </div>
+                                                    </div>
+                                            </td>
+                                            <td *ngIf="patientNotPart1">
+                                                    <div class="block-elems padding20  clearfix">
+                                                            <div class="left-side clearfix width35">
+                                                                <img class="tick-in-circle-img" src="../../../assets/images/cross-in-circle.png" data-toggle="modal" data-target="#myModal">
+                                                            </div>
+                                                            <div class="left-side clearfix width65" translate>
+                                                                <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal" translate>
+                                                                    Reject
+                                                                </p>
+                                                            </div>
+                                                    </div>
+                                            </td> 
+                                            <td  colspan="2" *ngIf="doctorNotPart">
+                                                    <div class="block-elems padding20  RytFloat clearfix width100">
+                                                            <div class="left-side clearfix width50">
+                                                                <img class="tick-in-circle-img" src="../../../assets/images/resend-icon.png" data-toggle="modal" data-target="#myModal3">
+                                                            </div>
+                                                            <div class="left-side clearfix width50">
+                                                                <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal3" translate>
+                                                                    Resend
+                                                                </p> 
+                                                            </div>
+                                                    </div>
+                                            </td>
+                                           
+                                          </tr>
+                                      <tr>
+                                            <td>
+                                                <div class="block-elems clearfix">
+                                                    <div class="left-side clearfix">
+                                                        <p class="notify-top-txt">
+                                                                30 <span translate>June</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="left-side clearfix">
+                                                        <p class="notify-top-txt border-adjstmnt">
+                                                                14:00 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="notify-btm-txt" translate>
+                                                        Doctor Maria has request to share your document with Doctor Haris
+                                                </p>
+                                            </td>
+                                            <td  colspan="2" *ngIf="patientNotPart">
+                                                    <div class="block-elems padding20  centered clearfix">
+                                                            <p class="accept-txt" translate>
+                                                                   Rejected
+                                                              </p>
+                                                      </div>
+                                            </td>
+                                           
+                                            <td  colspan="2" *ngIf="doctorNotPart">
+                                                    <div class="block-elems padding20  RytFloat clearfix width100">
+                                                            <div class="left-side clearfix width50">
+                                                                <img class="tick-in-circle-img" src="../../../assets/images/resend-icon.png" data-toggle="modal" data-target="#myModal3">
+                                                            </div>
+                                                            <div class="left-side clearfix width50">
+                                                                <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal3" translate>
+                                                                    Resend
+                                                                </p>
+                                                            </div>
+                                                    </div>
+                                            </td>
+                                           
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                                <div class="block-elems clearfix">
+                                                    <div class="left-side clearfix">
+                                                        <p class="notify-top-txt">
+                                                                30 <span translate>June</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="left-side clearfix">
+                                                        <p class="notify-top-txt border-adjstmnt">
+                                                                17:00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="notify-btm-txt" translate>
+                                                        Doctor Maria shared your document with Doctor Haris.
+                                                </p>
+                                            </td>
+                                            <td  colspan="2" *ngIf="patientNotPart">
+                                                    
+                                            </td>
+                                         
+                                            <td  colspan="2" *ngIf="doctorNotPart">
+                                                    
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                                <td>
+                                                    <div class="block-elems clearfix">
+                                                        <div class="left-side clearfix">
+                                                            <p class="notify-top-txt">
+                                                                    30 <span translate>June</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="left-side clearfix">
+                                                            <p class="notify-top-txt border-adjstmnt">
+                                                                    20:10
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="notify-btm-txt" translate>
+                                                            Doctor Maria has request to share your document with Doctor Haris
+                                                    </p>
+                                                </td>
+                                                <td  colspan="2" *ngIf="patientNotPart">
+                                                        <div class="block-elems padding20 centered  clearfix">
+                                                                <p class="accept-txt"  translate>
+                                                                       Rejected
+                                                                  </p>
+                                                          </div>
+                                                </td>
+                                             
+                                                <td  colspan="2" *ngIf="doctorNotPart">
+                                                        <div class="block-elems padding20  RytFloat width100 clearfix">
+                                                                <div class="left-side clearfix width50">
+                                                                    <img class="tick-in-circle-img" src="../../../assets/images/resend-icon.png" data-toggle="modal" data-target="#myModal3">
+                                                                </div>
+                                                                <div class="left-side clearfix width50">
+                                                                    <p class="accept-txt" style="cursor: pointer;" data-toggle="modal" data-target="#myModal3" translate>
+                                                                        Resend
+                                                                    </p>
+                                                                </div>
+                                                        </div>
+                                                </td>
+                                              </tr>
+                                    </tbody>
+                                  </table>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" translate>Reject Request</h4>
+              </div>
+              <div class="modal-body">
+                <p class="modal-bdy-txt" translate>
+                  Are you sure you want to reject this share request?
+                </p>
+                
+              </div>
+              <div class="modal-footer">
+                <div class="left-side clearfix">
+                  <button type="button" class="btn yes-btn2" data-dismiss="modal" translate>Confirm</button>
+                </div>
+                <div class="left-side clearfix">
+                  <button type="button" class="btn cancel-btn" data-dismiss="modal" translate>Cancel</button>
+                </div>
+        
+              </div>
+            </div>
+        
+          </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" translate>Accept Request</h4>
+              </div>
+
+              <div class="modal-body">
+                <p class="modal-bdy-txt" translate>
+                  Are you sure you want to accept this share request?
+                </p>
+                
+              </div>
+              
+              <div class="modal-footer">
+                <div class="left-side clearfix">
+                  <button type="button" class="btn yes-btn" data-dismiss="modal" translate>Accept</button>
+                </div>
+                <div class="left-side clearfix">
+                  <button type="button" class="btn cancel-btn" data-dismiss="modal" translate>Cancel</button>
+                </div>
+        
+              </div>
+            </div>
+        
+          </div>
+    </div>
+
+</div>
+
+
+
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" translate>Resend Request</h4>
+              </div>
+
+              <div class="modal-body">
+                <p class="modal-bdy-txt" translate>
+                  Are you sure you want to resend this share request?
+                </p>
+                
+              </div>
+              
+              <div class="modal-footer">
+                <div class="left-side clearfix">
+                  <button type="button" class="btn yes-btn" data-dismiss="modal" translate>Resend</button>
+                </div>
+                <div class="left-side clearfix">
+                  <button type="button" class="btn cancel-btn" data-dismiss="modal" translate>Cancel</button>
+                </div>
+        
+              </div>
+            </div>
+        
+          </div>
+    </div>
+
+</div>

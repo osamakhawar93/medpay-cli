@@ -1,0 +1,447 @@
+<section>
+        <div class="background">
+                <div class="head">
+
+
+
+                        <div class="content">
+                                <div>
+                                        <img class="logo" style="cursor: pointer;" (click)="moveToHome()" src="../../../assets/images/medpayrx-logo-beta-gr.jpg">
+                                </div>
+
+                                <div class="white-box">
+                                        <div class="panel with-nav-tabs panel-default">
+                                                <div class="panel-heading">
+                                                        <ul class="nav nav-tabs">
+                                                                <div class="overlay-div">
+
+                                                                </div>
+                                                                <li class="active disabled" id="one"><a href="#tab1default"
+                                                                                data-toggle="tab">01</a></li>
+                                                                <li id="two" class=" disabled"><a href="#tab2default"
+                                                                                data-toggle="tab">02</a></li>
+                                                                <li id="three"><a href="#tab3default" data-toggle="tab">03</a></li>
+                                                                <li id="four"><a href="#tab4default" data-toggle="tab">04</a></li>
+
+                                                        </ul>
+                                                </div>
+                                                <div class="panel-body">
+                                                        <div class="tab-content">
+                                                                <div class="tab-pane fade in active" id="tab1default">
+
+                                                                        <div>
+                                                                                <p class="stepTxt" translate>Step 1 of
+                                                                                        4</p>
+                                                                                <p class="main-txt" translate>
+                                                                                        {{"first, get your wallet" |
+                                                                                        translate}}
+                                                                                </p>
+
+
+                                                                                <div class="marTop30">
+                                                                                        <label class="container noMarginLeft">
+                                                                                                {{"I am a
+                                                                                                Patient" | translate}}
+                                                                                                <input id="patient"
+                                                                                                        (change)="patientSelected()"
+                                                                                                        type="radio"
+                                                                                                        checked="checked"
+                                                                                                        name="radio">
+                                                                                                <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <div class="marTop20">
+                                                                                                <label class="container noMarginLeft">
+                                                                                                        {{"I am
+                                                                                                        a doctor" |
+                                                                                                        translate}}
+                                                                                                        <input id="doctor"
+                                                                                                                (change)="doctorSelected()"
+                                                                                                                type="radio"
+                                                                                                                name="radio">
+                                                                                                        <span class="checkmark"></span>
+                                                                                                </label>
+                                                                                        </div>
+
+                                                                                </div>
+                                                                                <div class="block-elems centering martop200 clearfix">
+                                                                                        <div class="left-side noFloat clearfix">
+                                                                                                <button class="nothanks-btn noFloat marRight20"
+                                                                                                        (click)="navigateToAgree()"
+                                                                                                        type="button"
+                                                                                                        translate>Back</button>
+                                                                                        </div>
+                                                                                        <div class="right-side noFloat phn-mar-top clearfix">
+                                                                                                <button class="signin-btn"
+                                                                                                        type="button"
+                                                                                                        id="regBtn1"
+                                                                                                        (click)="navigateToReg1()"
+                                                                                                        translate>Next</button>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="tab2default">
+                                                                        <div>
+                                                                                <p class="stepTxt" translate>Step 2 of
+                                                                                        4</p>
+                                                                                <p class="main-txt">
+                                                                                        {{"who are you?" | translate}}
+                                                                                </p>
+                                                                                <p class="info-abt-txt" >
+                                                                                                {{"info" | translate}}<br>
+                                                                                        <span class="error" translate>{{"Fields
+                                                                                                        with" | translate}}</span>
+                                                                                </p>
+
+                                                                                <div class="marTop30">
+                                                                                        <div class="row">
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="fname"
+                                                                                                                        >{{"FName" | translate}}</label><span
+                                                                                                                        class="error">
+                                                                                                                        *</span>
+                                                                                                                <input
+                                                                                                                        type="text"
+                                                                                                                        class="form-control nn-input"
+                                                                                                                        [(ngModel)]="fname"
+                                                                                                                        id="fname"
+                                                                                                                        placeholder="{{'First Name' | translate}}">
+                                                                                                                <span
+                                                                                                                        class="error fnameerror"
+                                                                                                                        translate>First
+                                                                                                                        name</span>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                        <div class="form-group">
+
+                                                                                                                <input
+                                                                                                                        type="text"
+                                                                                                                        class="form-control nn-input marTop24"
+                                                                                                                        id="lname"
+                                                                                                                        placeholder="{{'Last Name' | translate}}">
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="marTop30">
+                                                                                        <div class="row">
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="email"
+                                                                                                                        translate>Email
+                                                                                                                        Address</label><span
+                                                                                                                        class="error">
+                                                                                                                        *</span>
+                                                                                                                <input
+                                                                                                                        type="email"
+                                                                                                                        class="form-control nn-input"
+                                                                                                                        [(ngModel)]="email"
+                                                                                                                        id="email"
+                                                                                                                        placeholder="{{'johndoe@gmx.de' | translate}}">
+                                                                                                                <span
+                                                                                                                        class="error emailerror"
+                                                                                                                        translate>Email
+                                                                                                                        is
+                                                                                                                        required</span>
+                                                                                                        </div>
+
+
+                                                                                                </div>
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="email"
+                                                                                                                        translate>Phone
+                                                                                                                        Number</label>
+                                                                                                                <div
+                                                                                                                        class="input-group myInputGrp">
+
+                                                                                                                        <input
+                                                                                                                                type="number"
+                                                                                                                                id="countryCode"
+                                                                                                                                (keyup)="countryCodeChck($event.target.value)"
+                                                                                                                                class="form-control width20 input-style right-radius-none"
+                                                                                                                                placeholder="0176" />
+                                                                                                                        <div
+                                                                                                                                class=" nn-addon"></div>
+                                                                                                                        <input
+                                                                                                                                type="text"
+                                                                                                                                class="form-control  input-style big-width left-radius-none"
+                                                                                                                                placeholder="86678880" />
+                                                                                                                </div>
+                                                                                                        </div>
+
+                                                                                                </div>
+
+                                                                                        </div>
+
+                                                                                </div>
+                                                                                <div class="marTop30">
+                                                                                        <div class="row">
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60"
+                                                                                                        *ngIf="doctorSelectedCheck">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="doctorLincenseNo"
+                                                                                                                        translate>Doctor
+                                                                                                                        License
+                                                                                                                        Number</label><span
+                                                                                                                        class="error">
+                                                                                                                        *</span>
+                                                                                                                <input
+                                                                                                                        type="text"
+                                                                                                                        required="required"
+                                                                                                                        class="form-control nn-input "
+                                                                                                                        [(ngModel)]="doclicense"
+                                                                                                                        id="doctorLincenseNo"
+                                                                                                                        placeholder="ABC23443">
+                                                                                                                <span
+                                                                                                                        class="error doclicenseerror"
+                                                                                                                        translate>Doctor
+                                                                                                                        License
+                                                                                                                        Number
+                                                                                                                        is
+                                                                                                                        required</span>
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                <div class="form-group algnleft">
+                                                                                                        <label class="containers"
+                                                                                                                translate>I
+                                                                                                                acknowledge
+                                                                                                                <span
+                                                                                                                        class="error">
+                                                                                                                        *</span>
+                                                                                                                <input
+                                                                                                                        type="checkbox"
+                                                                                                                        id="check">
+                                                                                                                <span
+                                                                                                                        class="checkmarks"></span>
+                                                                                                        </label>
+                                                                                                        <span class="error cberror"
+                                                                                                                translate>Please
+                                                                                                                acknowledge</span>
+                                                                                                </div>
+
+
+                                                                                        </div>
+                                                                                </div>
+                                                                                <!--  <div class="marTop30">
+                                                                         <div class="row">
+                                                                             <div class="col-lg-4">
+                                                                                     <div class="form-group">
+                                                                                             <label class="nn-lbl" for="insuranceCompany">Insurence Company</label>
+                                                                                             <ng-select [allowClear]="true"
+                                                                                             [items]="items"
+                                                                                             [disabled]="disabled"
+                                                                                             placeholder="Select Insurence">
+                                                                                 </ng-select>
+                                                                                    </div>
+                                                                             </div>
+                                                                             <div class="col-lg-4">
+                                                                                     <div class="form-group">
+                                                                                             <label class="nn-lbl" for="insuranceNo">Insurence Number</label>
+                                                                                             <input  type="text" class="form-control nn-input " id="insuranceNo" placeholder="0177 111 99 223">
+                                                                                     </div>
+                                                                             </div>
+                                                 
+                                                                         </div>
+                                                                 </div>  -->
+                                                                                <div class="block-elems centering martop40 clearfix">
+                                                                                        <div class="left-side noFloat clearfix">
+                                                                                                <button class="nothanks-btn marRight20"
+                                                                                                        type="button"
+                                                                                                        (click)="navigateToSelectionpart()"
+                                                                                                        translate>Back</button>
+                                                                                        </div>
+                                                                                        <div class="right-side phn-mar-top noFloat clearfix">
+                                                                                                <button class="signin-btn"
+                                                                                                        type="button"
+                                                                                                        (click)="navigateToReg2()"
+                                                                                                        translate>Next</button>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="tab3default">
+                                                                        <div>
+                                                                                <p class="stepTxt" translate>Step 3 of
+                                                                                        4</p>
+                                                                                <p class="main-txt" >
+                                                                                       {{"set up your account" |  translate}}
+                                                                                </p>
+                                                                                <p class="info-abt-txt" >
+                                                                                                {{"info" |  translate}}
+                                                                                </p>
+                                                                                <div class="marTop30">
+                                                                                        <div class="row">
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="uname"
+                                                                                                                        translate>Select
+                                                                                                                        Username</label>
+                                                                                                                <input
+                                                                                                                        type="text"
+                                                                                                                        class="form-control nn-input"
+                                                                                                                        id="uname"
+                                                                                                                        placeholder="{{'Username' | translate}}">
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="marTop30">
+                                                                                        <div class="row">
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60 ">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="pass1"
+                                                                                                                        translate>Password</label>
+                                                                                                                <input
+                                                                                                                        type="password"
+                                                                                                                        class="form-control nn-input"
+                                                                                                                        id="pass1"
+                                                                                                                        placeholder="{{'Password' | translate}}">
+
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                                <div class="col-md-4 col-lg-4 adjustment">
+                                                                                                        <p class="validation-txt"
+                                                                                                                translate>10
+                                                                                                                Letters</p>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="marTop30">
+                                                                                        <div class="row">
+                                                                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 width60">
+                                                                                                        <div class="form-group algnleft">
+                                                                                                                <label
+                                                                                                                        class="nn-lbl"
+                                                                                                                        for="cpass1"
+                                                                                                                        translate>Confirm
+                                                                                                                        Password</label>
+                                                                                                                <input
+                                                                                                                        type="password"
+                                                                                                                        class="form-control nn-input"
+                                                                                                                        id="cpass1"
+                                                                                                                        placeholder="{{'Confirm Password' | translate}}">
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="block-elems centering martop40 clearfix">
+                                                                                        <div class="left-side noFloat clearfix">
+                                                                                                <button class="nothanks-btn marRight20"
+                                                                                                        type="button"
+                                                                                                        (click)="moveBackToReg1()"
+                                                                                                        translate>Back</button>
+                                                                                        </div>
+                                                                                        <div class="right-side noFloat phn-mar-top clearfix">
+                                                                                                <button class="signin-btn"
+                                                                                                        type="button"
+                                                                                                        (click)="navigateTocongoPart()"
+                                                                                                        translate>Create
+                                                                                                        Wallet</button>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="tab4default">
+                                                                        <div>
+                                                                                <p class="stepTxt" translate>Step 4 of
+                                                                                        4</p>
+                                                                                <p class="main-txt" >
+                                                                                        {{"congratulations" |  translate}}
+                                                                                </p>
+                                                                                <p class="info-abt-txt" >
+                                                                                                  {{"signed up" |  translate}}
+                                                                                </p>
+                                                                                <p class="info-abt-txt" >
+                                                                                          {{"medical documents" |  translate}}
+                                                                                </p>
+
+                                                                                <div class="marTop20">
+                                                                                        <p class="invite-txt">
+                                                                                                {{"Invite a Friend" |  translate}}
+                                                                                        </p>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                        <div class="col-xs-6 col-sm-6 col-md-4">
+                                                                                                <div class="form-group algnleft">
+                                                                                                        <input type="text"
+                                                                                                                class="form-control nn-input"
+                                                                                                                id="emailid"
+                                                                                                                placeholder="{{'Email ID' | translate}}">
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="col-xs-6 col-sm-6 col-md-1 nopaddingLeft AlgnLeft">
+                                                                                                <button class="invite-btn"
+                                                                                                        type="button"
+                                                                                                        translate>Invite</button>
+                                                                                        </div>
+                                                                                </div>
+                                                                                <p class="info-abt-txt" translate>
+                                                                                        {{"invite link" |  translate}}
+                                                                                </p>
+                                                                                <div class="martop40">
+                                                                                        <p class="info-abt-txt"
+                                                                                                >
+                                                                                                {{"future updates and service" |  translate}}
+                                                                                        </p>
+                                                                                        <p class="info-abt-txt"
+                                                                                                >
+                                                                                                {{"stay in touch" |  translate}}
+                                                                                                 <a class="newsletter-link"
+                                                                                                        translate></a>.
+                                                                                        </p>
+                                                                                </div>
+                                                                                <div>
+                                                                                        <button class="signin-btn custm-settng"
+                                                                                                type="button" (click)="routeToPatientDoc()"
+                                                                                                translate>Login to
+                                                                                                Account</button>
+
+                                                                                </div>
+
+                                                                        </div>
+                                                                </div>
+
+                                                        </div>
+                                                </div>
+
+                                        </div>
+
+
+                                        <!--selection part start-->
+
+                                        <!--selection part start 2-->
+
+
+
+                                        <!--congratulations-->
+
+                                </div>
+
+
+                        </div>
+                </div>
+        </div>
+
+</section>

@@ -1,0 +1,75 @@
+
+
+<section>
+    <div class="background">
+        <div class="head">
+            <div>
+
+            </div>
+            <div class="content">
+                <div>
+                    <img class="logo" style="cursor: pointer;" (click)="moveToHome()" src="../../../assets/images/medpayrx-logo-beta-gr.jpg">
+                </div>
+
+                <div class="white-box">
+                    <div>
+                        <p class="main-txt">
+                            {{"sign in to secure wallet" | translate}}
+                        </p>
+                    </div>
+
+                    <div class="centeringSigninContent">
+                        <div class="row mb-10">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <label class="container noMarginLeft" translate>Patient
+                                    <input id="patient" (change)="patientSelected()" id="radiob" type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span class="error radioerror" translate>Please select one</span>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div>
+                                    <label class="container noMarginLeft" translate>Doctor
+                                        <input id="doctor" (change)="doctorSelected()" id="radiob2" type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="centeringSigninContent">
+                        <div class="form-group">
+                            <label class="nn-lbl" for="email" translate>Email Address</label>
+                            <input type="email" class="form-control nn-input" id="email">
+                        </div>
+                        <div class="form-group posRelative">
+                            <label class="nn-lbl" for="pass" translate>Password</label>
+                            <input type="password" class="form-control nn-input" id="pass">
+                            <img src="../../../assets/images/eye-icon.png" class="eye-icon" (mousedown)="showPass()"
+                                (mouseup)="hidePass()">
+                        </div>
+
+                        <div>
+                            <button class="signin-btn " type="button" (click)="routeToPatientDoc()" translate>Sign In</button>
+                        </div>
+                        <div>
+                            <p class="or-txt">
+                                {{"or" |  translate}}
+                            </p>
+                        </div>
+                        <div>
+                            <button class="signup-btn " type="button" (click)="routeToReg()" translate>Register</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>

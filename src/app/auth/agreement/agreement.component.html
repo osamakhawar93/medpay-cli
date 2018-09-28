@@ -1,0 +1,75 @@
+
+<section>
+    <div class="background">
+        <div class="head">
+            <div>
+                
+            </div>
+            <div class="content">
+                <div>
+                    <img class="logo" style="cursor: pointer;" (click)="moveToHome()" src="../../../assets/images/medpayrx-logo-beta-gr.jpg">
+                </div>
+                <div *ngIf="agree1">
+                    <div class="white-box">
+                      <p class="agree-txt" translate>
+                        {{ "Medical records transfer" | translate }}
+                      </p>
+                     
+                      <p class="agree-txt" translate>{{ "Agreement_paragraph" | translate }}</p>
+
+                      <p class="disclaimer" translate>{{ "disclaimer" | translate }}</p>
+
+                      <div class="block-elems centering martop130 clearfix">
+                        <div class="left-side clearfix noFloat">
+                            <button class="nothanks-btn marRight20 " type="button" (click)="navigateToLanding()" translate>No Thanks</button>
+                        </div>
+                        <div class="right-side clearfix phn-mar-top noFloat">
+                                <button class="signin-btn " type="button" (click)="navigateToAgree2()" translate>I Agree, Proceed</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div *ngIf="agree2">
+                    <div class="white-box">
+                        <div>
+                                <p class="agree-purpl-txt" translate>
+                                        How Do We Contact You?
+                                      </p>
+                                      <ol class="agree-ol">
+                                          <li class="agree-li" translate>
+                                            TUV sud Certificate
+                                          </li>
+                                          <li class="agree-li" translate>
+                                            exchange confidential<a class="agree-link" translate>Privacy Policy</a><span translate> here)</span>
+                                          </li>
+                                          <li class="agree-li" translate>
+                                            First notification
+                                          </li>
+                                      </ol>
+                        </div>
+                   <div class="martop40">
+                        <p class="agree-purpl-txt" translate>
+                            why this?
+                              </p>
+                              <p class="agree-txt2" translate>
+                                why this answer
+                              </p>
+                   </div>
+
+                   <div class="block-elems centering martop50 clearfix">
+                        <div class="left-side noFloat clearfix">
+                            <button class="nothanks-btn marRight20" type="button"  (click)="navigateToLanding()" translate>No Thanks</button>
+                        </div>
+                        <div class="right-side noFloat  phn-mar-top  clearfix">
+                                <button class="signin-btn" type="button" (click)="navigateToPatientRegister()" translate>I Agree, Proceed</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </div>
+</section>

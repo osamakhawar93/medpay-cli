@@ -1,0 +1,182 @@
+.spacing-div{
+    width: 95%;
+    margin: 0 auto;
+}
+.doc-txt{
+    color: black;
+    font-family: 'm-regular';
+    font-size: 22px;
+   
+
+}
+.background-colr{
+    background-color: #f5f5f5;
+    min-height: 100vh;
+
+}
+.left-side{
+    position: relative;
+    float: left;
+}
+.head-wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.back-arw-img{
+    width: 20px;
+    margin-top: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.doc-txt1{
+    color: black;
+    font-family: 'm-light';
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 20px;
+    border-left: 1px solid;
+    padding-left: 9px; 
+}
+.right-side{
+    position: relative;
+    float: right;
+}
+.share-btn{
+    border-radius: 3px;
+    height: 40px;
+    width: 130px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: #24b06d;
+}
+.white-icon-img{
+    height: 22px;
+}
+.white-div{
+    background-color: white;
+    padding: 15px;
+}
+.nn-table>tbody>tr>td{
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.nn-table>thead>tr>th{
+    border-bottom: none;
+    width: 25%;
+}
+.fontMontReg{
+    font-family: 'm-regular';
+}
+.font17{
+    font-size: 17px;
+}
+.padding12{
+    padding: 12px;
+}
+.nn-table thead{
+    background-color: #f5f5f5;
+}
+.tbl-txt{
+    font-family: 'm-light';
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+}
+
+.cross-in-crcl-img{
+    height: 24px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.centered{
+    text-align: center;
+}
+.pagination-ul{
+    list-style-type: none;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.pagination-li{
+    display: inline-block;
+    color: #c8c8c8;
+    font-family: 'm-regular';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.change-li{
+    padding-left: 10px;
+    padding-right: 10px;  
+    display: inline-block;
+    color: #0aa965 !important;
+    font-family: 'm-regular';
+}
+.modal-header{
+    border-bottom: none !important;
+}
+.modal-title{
+    font-family: 'm-bold';
+    font-size: 20px;
+    color: black;
+}
+.modal-bdy-txt{
+    font-family: 'm-regular';
+    color: black;
+}
+.modal-dialog{
+    width: 450px;
+    margin: 0 auto;
+}
+.modal-footer{
+    border-top: none;
+}
+.yes-btn{
+    background-color: #24b06d;
+    color: white;
+    font-family: 'm-light';
+    padding: 5px 30px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.cancel-btn{
+    background-color: #5c5b5b !important;
+    color: white !important;
+    font-family: 'm-light' !important;
+    padding: 5px 30px !important;
+    border: none !important;
+    border-radius: 3px !important;
+    margin-bottom: 10px !important;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 640px){
+    .phn-adjstmnt-rytside{
+width: 100%;
+float: left;
+padding-left: 20px;
+    }
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+.padding-btm{
+    padding-bottom: 20px;
+}
+.bg-red{
+    background-color: red !important;
+}

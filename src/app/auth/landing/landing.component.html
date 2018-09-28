@@ -1,0 +1,57 @@
+
+
+<section>
+    <div class="background">
+        <div class="head">
+            <div>
+
+            </div>
+            <div class="content">
+                <div>
+                    <img class="logo" (click)="moveToHome()" src="../../../assets/images/medpayrx-logo-beta-gr.jpg">
+                </div>
+                <div>
+                    <p class="main-txt" >
+                        {{ "safely & securely" | translate }}
+                    </p>
+                </div>
+                <div class="white-box">
+                    <p class="white-box-txt" translate>
+                          {{ "GDPR Compliant" | translate }}
+                    </p>
+                    <div class="block-elems centering clearfix">
+                        <div class="left-side noFloat clearfix">
+                            <button class="signin-btn marRight20 noFloat" type="button" (click)="routeToLogin()"
+                                translate>Sign In</button>
+                        </div>
+                        <div class="right-side noFloat clearfix">
+                            <button class="signin-btn phn-mar-top noFloat" type="button" (click)="routeToAgree()"
+                                translate>Register</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="block-elems clearfix customPadding AbsDiv">
+                    <div class="left-side clearfix">
+                        <img class="werk-img" src="../../../assets/images/werk1-icon.png">
+                    </div>
+                    <div class="right-side clearfix">
+                        <img class="insurtech-img" src="../../../assets/images/insurtech-icon.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p class="btm-txt">
+            MedpayRx UG, Morfelder Landstrasse 64,&nbsp; <span class="glyphicon glyphicon-earphone"></span> 49 176 621
+            88 111,&nbsp; <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@medpayrx.de">info@medpayrx.de</a>,
+            <a style="cursor: pointer;" translate>&nbsp;&nbsp;Privacy Policy</a>
+        </p>
+    </div>
+</section>

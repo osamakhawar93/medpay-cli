@@ -1,0 +1,268 @@
+<section>
+  <div class="background-colr">
+    <div class="spacing-div">
+      <div class="head-wrap clearfix">
+        <div class="left-side clearfix">
+          <img (click)="moveBackTodocDocument()" class="back-arw-img" src="../../../assets/images/arrow-back-img.png">
+        </div>
+        <div class="left-side clearfix">
+          <p class="doc-txt" translate>
+            Add Document
+          </p>
+        </div>
+
+      </div>
+      <div class="white-div">
+        <div>
+          <p class="upload-file-txt" translate>
+            Upload File
+          </p>
+        </div>
+        <div class="marTop20 row">
+          <div class="col-sm-3">
+            <label class="custom-file">
+              <input id="selector" (onFileDrop)="dropped($event)" (onFileSelected)="onFileSelected($event)" type="file"
+                ng2FileSelect [uploader]="uploader" accept="application/pdf,application/msword,text/plain" class="nofocus custom-file-input height38"
+                style="cursor: pointer;">
+              <span class="custom-file-control" translate>Upload File</span>
+
+            </label>
+          </div>
+          <div class="col-sm-9">
+            <table class="table">
+              <tr *ngFor="let item of uploader.queue">
+                <span>
+                  <td>
+                    <strong>{{ item?.file?.name }}</strong>
+                  </td>
+                  <td nowrap>
+                    <button type="button" class="btn  btn-sm m-b-5 cross-img-rmv-btn nofocus" (click)="emptyArray()">
+                      <img src="../../../assets/images/cross-in-circle.png" class="width22">
+                    </button>
+                </span>
+
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="row mar30">
+
+
+          <div class="col-lg-3">
+
+            <div class="form-group">
+              <p class="nn-lbl fw-600" translate>
+                Patient Details<span class="error"> *</span>
+              </p>
+              <input type="text" class="form-control nn-input " [(ngModel)]="pname" placeholder="{{'Patient Name' | translate}}">
+              <span class="error pnerror" translate>This field is required</span>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3">
+
+            <div class="form-group">
+              <div class="form-group">
+                <p class="nn-lbl clr-white" translate>
+                  .
+                </p>
+                <input type="text" class="form-control nn-input " [(ngModel)]="pemail" placeholder="{{'Email Address' | translate}}">
+                <span class="error eaerror" translate>This field is required</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="marTop20">
+          <p class="upload-file-txt" translate>
+            Share
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+
+            <div class="form-group">
+              <label class="nn-lbl" for="insuranceCompany" translate>Share With</label>
+              <select class="custom-select form-control" (change)="onChange($event.target.value)">
+                <option value="General Practitioner">{{"General Practitioner" | translate}}</option>
+                <option value="Specialist">{{"Specialist" | translate}}</option>
+                <option value="Pharmacy">{{"Pharmacy" | translate}}</option>
+                <option value="Testing lab">{{"Testing lab" | translate}}</option>
+                <option value="Doctor">{{"Doctor" | translate}}</option>
+                <option value="Patient">{{"Patient" | translate}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hideGP">
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <label class="nn-lbl" for="gp" translate>General Practitioner</label>
+                <input type="text" class="form-control nn-input " id="gp" placeholder="{{'General Practitioner Name' | translate}}">
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="nn-lbl" for="insuranceCompany">Email</label>
+                  <input type="text" class="form-control nn-input " id="uname" placeholder="{{'Email Address' | translate}}">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hideSpecialist">
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <label class="nn-lbl" for="specialist" translate>Specialist</label>
+                <input type="text" class="form-control nn-input " id="specialist" placeholder="{{'Specialist Name' | translate}}">
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="nn-lbl" for="insuranceCompany">Email</label>
+                  <input type="text" class="form-control nn-input " id="uname" placeholder="{{'Email Address' | translate}}">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidelab">
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <label class="nn-lbl" for="testlab" translate>Testing Lab</label>
+                <input type="text" class="form-control nn-input " id="testlab" placeholder="{{'Testing Lab Name' | translate}}">
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="nn-lbl" for="insuranceCompany">Email</label>
+                  <input type="text" class="form-control nn-input " id="uname" placeholder="{{'Email Address' | translate}}">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidepharmacy">
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <label class="nn-lbl" for="pharmacy" translate>Pharmacy</label>
+                <input type="text" class="form-control nn-input " id="pharmacy" placeholder="{{'Pharmacy Name' | translate}}">
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="nn-lbl" for="insuranceCompany">Email</label>
+                  <input type="text" class="form-control nn-input " id="uname" placeholder="{{'Email Address' | translate}}">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidedoctor">
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <label class="nn-lbl" for="doctor" translate>Doctor</label>
+                <input type="text" class="form-control nn-input " id="doctor" placeholder="{{'Doctor Name' | translate}}">
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="nn-lbl" for="insuranceCompany">Email</label>
+                  <input type="text" class="form-control nn-input " id="uname" placeholder="{{'Email Address' | translate}}">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hidepatient">
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <label class="nn-lbl" for="doctor" translate>Patient</label>
+                <input type="text" class="form-control nn-input " id="doctor" placeholder="{{'Patient Name' | translate}}">
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="nn-lbl" for="insuranceCompany">Email</label>
+                  <input type="text" class="form-control nn-input " id="uname" placeholder="{{'Email Address' | translate}}">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="marTop20">
+          <button class="signin-btn" type="button" (click)="patientDetailsRequired()" translate>Share</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="modal fade" id="myModal3" role="dialog"  [ngStyle]="{'display': mdlSampleIsOpen ? 'block' : 'none', 'opacity': 1}">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" translate>Request Submitted</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-bdy-txt" translate>
+            request to patient
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="left-side clearfix">
+            <button type="button" class="btn yes-btn" data-dismiss="modal" (click)="moveBackTodocDocument()" translate>Okay</button>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

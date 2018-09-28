@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/fonts/mont/stylesheet.css";
+@import "assets/fonts/myriad/styles.css";
+@import "assets/fonts/poppins/stylesheet.css";
+
+.ActiveFlag{
+    border-bottom: 4px solid #24b06d;
+    padding-bottom: 6px;
+}
+
+.error{
+    color: red;
+    font-family: 'm-light';
+}
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+.vertical-alignment-helper .modal-dialog{
+    width: 450px !important;
+    margin: 0 auto;
+}
+
+
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+#myModal2 .vertical-alignment-helper .modal-content{
+    width: 450px !important;
+    margin: 0 auto;
+}
+
+
+.nn-input{
+    font-family: 'm-light';
+}

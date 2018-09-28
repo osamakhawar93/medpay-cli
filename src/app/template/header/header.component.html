@@ -1,0 +1,71 @@
+<nav class="navbar navbar-inverse my-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand mynavbar-brand">
+        <img class="navbar-logo" (click)="moveToPatOrDocHome()" src="../../../assets/images/footlogo03_beta.jpg">
+      </a>
+
+    </div>
+    <p class="navbar-txt" *ngIf="patientTxt" translate>
+      Patient Document Management Portal
+    </p>
+    <p class="navbar-txt" *ngIf="doctorTxt" translate>
+      Doctor Document Management Portal
+    </p>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <div class="centerAlgn">
+          <img class="bell-img" (click)="routeTonotifications()" src="../../../assets/images/bell.png">
+        </div>
+        <div class="dropdown my-DD-home">
+          <button class="btn  dropdown-toggle my-btn-navbar" type="button" data-toggle="dropdown">
+            <img src="../../../assets/images/caret.png" class="myCaret">
+
+            <div class="left-side custom-border">
+              <img class="navbar-ellipse" src="../../../assets/images/navbar-ellipse1.png">
+            </div>
+            <div class="left-side">
+              <p class="name-in-dd" *ngIf="patientName">Alina Schmuck</p>
+            </div>
+            <div class="left-side">
+              <p class="name-in-dd" *ngIf="DoctorName">Dr. Roland Schmidt</p>
+            </div>
+          </button>
+          <ul class="dropdown-menu myDDmenu">
+            <li><a (click)="logout()" translate>Logout</a></li>
+          </ul>
+        </div>
+
+        <ul class="flags-ul custom-adjusting">
+          <li class="flags-li" id="german" (click)="addActiveClass('german');switchLanguage('de')">
+            <img class="flag-img" src="../../../assets/images/german-flag.png">
+          </li>
+          <li class="flags-li width">
+
+          </li>
+          <li class="flags-li " id="eng" (click)="addActiveClass('eng');switchLanguage('en')">
+            <img class="flag-img" src="../../../assets/images/eng-flag.png">
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+

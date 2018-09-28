@@ -1,0 +1,260 @@
+<section>
+  <div class="background-colr">
+    <div class="spacing-div">
+      <div class="head-wrap clearfix">
+        <div class="left-side clearfix">
+          <img (click)="moveToPatientDocs()" class="back-arw-img" src="../../../assets/images/arrow-back-img.png">
+        </div>
+        <div class="left-side clearfix">
+          <p class="doc-txt" translate>
+
+            Overview of Shared Documents
+          </p>
+        </div>
+        <div class="left-side clearfix">
+          <p class="doc-txt1" translate></p>
+        </div>
+        <div class="right-side phn-adjstmnt-rytside clearfix">
+          <button type="button" class="share-btn" translate data-toggle="modal" data-target="#myModal2">
+            <img class="white-icon-img" src="../../../assets/images/white-usr-icon.png">
+            {{"Share" | translate}}
+          </button>
+        </div>
+      </div>
+
+      <div class="white-div">
+        <div class="table-responsive">
+          <table class="table nn-table">
+            <thead>
+              <tr>
+                <th class="date-col fontMontReg font17 padding12" translate>
+                  Shared With/By
+                </th>
+                <th class="patient-name fontMontReg font17 padding12" translate>User type</th>
+                <th class="time-slot fontMontReg font17 padding12" translate>Date</th>
+                <th class="patient-name fontMontReg font17 padding12 centered" translate>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+           
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt">
+                    niklas@teleworm.de
+                  </p>
+                </td>
+                <td class="patient-name no-border-top">
+                  <p class="tbl-txt" translate>
+                    Doctor
+                  </p>
+                </td>
+                <td class="time-slot no-border-top">
+                  <p class="tbl-txt">
+                    20 <span translate>June</span> 18 , 02:00
+                  </p>
+                </td>
+                <td class="centered">
+                  <img class="cross-in-crcl-img" src="../../../assets/images/cross-in-circle.png" data-toggle="modal"
+                    data-target="#myModal">
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt">
+                    janina@dayrep.de
+                  </p>
+                </td>
+                <td class="patient-name no-border-top">
+                  <p class="tbl-txt" translate>
+                    Testing Lab
+                  </p>
+                </td>
+                <td class="time-slot no-border-top">
+                  <p class="tbl-txt">
+                    20 <span translate>June</span> 18 , 15:00
+                  </p>
+                </td>
+                <td class="centered">
+                  <img class="cross-in-crcl-img" src="../../../assets/images/cross-in-circle.png" data-toggle="modal"
+                    data-target="#myModal">
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt">
+                    leonie@rhyta.de
+                  </p>
+                </td>
+                <td class="patient-name no-border-top">
+                  <p class="tbl-txt" translate>
+                    Pharmacy
+                  </p>
+                </td>
+                <td class="time-slot no-border-top">
+                  <p class="tbl-txt">
+                    20 <span translate>June</span> 18 , 16:00
+                  </p>
+                </td>
+                <td class="centered">
+                  <img class="cross-in-crcl-img" src="../../../assets/images/cross-in-circle.png" (click)="getRow($event)"
+                    data-toggle="modal" data-target="#myModal">
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt">
+                    christian@dayrep.de
+                  </p>
+                </td>
+                <td class="patient-name no-border-top">
+                  <p class="tbl-txt" translate>
+                    Specialist
+                  </p>
+                </td>
+                <td class="time-slot no-border-top">
+                  <p class="tbl-txt">
+                    20 <span translate>June</span> 18 , 20:00
+                  </p>
+                </td>
+                <td class="centered">
+                  <img class="cross-in-crcl-img" src="../../../assets/images/cross-in-circle.png" data-toggle="modal"
+                    data-target="#myModal">
+                </td>
+              </tr>
+              <tr class="ng-tns-c6-2">
+                <td class="date-col no-border-top">
+
+                  <p class="tbl-txt">
+                    praxis@artzschmidt.de
+                  </p>
+                </td>
+                <td class="patient-name no-border-top">
+                  <p class="tbl-txt" translate>
+                    General Practitioner
+                  </p>
+                </td>
+                <td class="time-slot no-border-top">
+                  <p class="tbl-txt">
+                    20 <span translate>June</span> 18 , 22:00
+                  </p>
+                </td>
+                <td class="centered">
+                  <img class="cross-in-crcl-img" src="../../../assets/images/cross-in-circle.png" data-toggle="modal"
+                    data-target="#myModal">
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+
+      <!--pagination starts-->
+      <div class="padding-btm">
+        <ul class="pagination-ul">
+          <li class="pagination-li " translate>
+            Page
+          </li>
+          <li class="change-li">
+            01
+          </li>
+          <li class="pagination-li">
+            02
+          </li>
+          <li class="pagination-li">
+            03
+          </li>
+          <li class="pagination-li">
+            04
+          </li>
+          <li class="pagination-li">
+            ...
+          </li>
+          <li class="pagination-li" translate>
+            Last
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+
+</section>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" translate>Remove User</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-bdy-txt" translate>
+            accessing this document?
+          </p>
+
+        </div>
+        <div class="modal-footer">
+          <div class="left-side clearfix">
+            <button type="button" class="btn yes-btn bg-red" data-dismiss="modal" (click)="removeUser()" translate>Confirm</button>
+          </div>
+          <div class="left-side clearfix">
+            <button type="button" class="btn cancel-btn" data-dismiss="modal" translate>Cancel</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="modal fade" id="myModal2" role="dialog">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" translate>Share Document</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-bdy-txt" translate>
+            Enter Email address
+          </p>
+          <div>
+            <input type="text" class="form-control nn-input" id="cpass1" placeholder="{{'john@gmx.de' | translate}}">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="left-side clearfix">
+            <button type="button" class="btn yes-btn" data-dismiss="modal" (click)="moveToShareDetails($event)"
+              translate>Share</button>
+          </div>
+          <div class="left-side clearfix">
+            <button type="button" class="btn cancel-btn" data-dismiss="modal" translate>Cancel</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
